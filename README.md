@@ -1,2 +1,19 @@
 # Trybe-exercises
-Repositório dedicado a todos os exercícios do curso de Desenvolvimento Web da Trybe. Turma 09, iniciada em Novembro 2020
+
+Eu sou [Kevin Fraga](https://www.linkedin.com/in/kevincfraga/), dedicado integrante da abençoada *Turma 09*, com início das aulas em Novembro de 2020. :nine:
+
+Este repositório é dedicado a todos os exercícios desenvolvidos durante o curso de Desenvolvimento Web da [Trybe](https://www.betrybe.com/). :rocket:
+
+## Trybe
+
+A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho.
+
+O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
+
+## Fundamentos do Desenvolvimento Web
+
+##### Bloco 1: Introdução - Unix & Shell :white_check_mark:
+
+##### Bloco 2: Git & GitHub :white_check_mark:
+
+##### Bloco 3: Introdução - HTML & CSS :hourglass_flowing_sand:
