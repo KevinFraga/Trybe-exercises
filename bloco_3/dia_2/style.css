@@ -1,0 +1,33 @@
+h1 {
+  height: 65px;
+  color: orange;
+  font-family: sans-serif;
+}
+ul {
+  background-color: violet;
+  line-height: 1.5em;
+  text-align: left;
+  text-decoration: underline black wavy;
+}
+.Yay {
+  background-color: blue;
+  font-size: 50px;
+}
+p {
+  font-weight: 600;
+  height: 3em;
+  font-style: italic;
+  text-decoration: underline black dotted;
+}
+body {
+  font-size: 16px;
+}
+#yellow {
+  background-color: yellow;
+}
+#red {
+  background-color: red;
+}
+#brown {
+  background-color: brown;
+}
