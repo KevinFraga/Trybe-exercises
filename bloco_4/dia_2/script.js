@@ -51,3 +51,13 @@ if (impar === 0) {
 } else {
   console.log(impar);
 }
+
+// 7- Utilizando for , descubra qual o menor valor contido no array e imprima-o;
+
+let menor = 99999999;
+for (let index = 0; index < numbers.length; index += 1) {
+  if (numbers[index] < menor) {
+    menor = numbers[index];
+  }
+}
+console.log(menor);
