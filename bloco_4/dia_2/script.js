@@ -69,3 +69,9 @@ for (let index = 1; index < 26; index += 1) {
   array.push(index);
 }
 console.log(array);
+
+// 9- Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2;
+
+for (let index = 0; index < array.length; index += 1){
+    console.log(array[index]/2)
+}
