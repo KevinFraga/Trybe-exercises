@@ -62,29 +62,34 @@
       greenColorChange();
 
       // 3- Crie uma função que mude a cor do quadrado vermelho para branco.
-      function whiteColorChange(){
+      function whiteColorChange() {
         let helper = document.getElementsByClassName("center-content")[0];
         helper.style.backgroundColor = "white";
       }
       whiteColorChange();
 
       // 4- Crie uma função que corrija o texto da tag <h1>.
-      function h1FixTag(){
+      function h1FixTag() {
         let helper = document.getElementsByTagName("h1")[0];
-        helper.innerText = "Exercício 5.1 - JavaScript"
+        helper.innerText = "Exercício 5.1 - JavaScript";
       }
       h1FixTag();
 
       // 5- Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
-      function pToUpperCase(){
+      function pToUpperCase() {
         let helper = document.getElementsByTagName("p")[1];
         helper.innerText = helper.innerText.toUpperCase();
       }
       pToUpperCase();
 
       // 6- Crie uma função que exiba o conteúdo de todas as tags <p> no console.
-      
-
+      function pConsoleLog() {
+        let helper = document.getElementsByTagName("p");
+        for (let index = 0; index < helper.length; index += 1) {
+          console.log(helper[index].innerText);
+        }
+      }
+      pConsoleLog();
     </script>
   </body>
 </html>
