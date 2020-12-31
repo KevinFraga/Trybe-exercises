@@ -243,3 +243,30 @@ function colorSelection() {
 }
 
 colorSelection();
+
+/* Exercício 10:
+Implemente uma função que adiciona um evento que ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
+Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
+*/
+
+function dayTaskColor(event) {
+  let day = event.target;
+  let helper = document.querySelector(".selected");
+  if (helper === null) {
+    return;
+  }
+  let newColor = helper.style.backgroundColor;
+  let oldColor = "rgb(119, 119, 119)";
+  if (day.style.color === newColor) {
+    day.style.color = oldColor;
+  } else {
+    day.style.color = newColor;
+  }
+}
+
+function taskColorSelection() {
+  let days = document.getElementById("days");
+  days.addEventListener('click', dayTaskColor);
+}
+
+taskColorSelection();
