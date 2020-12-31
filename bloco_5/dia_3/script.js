@@ -28,6 +28,7 @@ O array dezDaysList contém os dois últimos dias de novembro e os dias do mês 
     Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
     Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li>
 */
+
 const dezDaysList = [
   29,
   30,
@@ -69,10 +70,10 @@ function createMonthDays() {
   let day;
   for (let index = 0; index < dezDaysList.length; index += 1) {
     day = document.createElement("li");
-    day.className = "day";
+    day.classList.add("day");
     day.innerText = dezDaysList[index];
     if (index - 1 === 24 || index - 1 === 25 || index - 1 === 31) {
-      day.className += " holiday";
+      day.classList.add("holiday");
     }
     if (
       index - 1 === 4 ||
@@ -80,11 +81,12 @@ function createMonthDays() {
       index - 1 === 18 ||
       index - 1 === 25
     ) {
-      day.className += " friday";
+      day.classList.add("friday");
     }
     month.appendChild(day);
   }
 }
+
 createMonthDays();
 
 /* Exercício 2:
@@ -92,23 +94,27 @@ Implemente uma função que receba como parâmetro a string "Feriados" e crie di
 Adicione a este botão a ID "btn-holiday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
-function holidayButton() {
+
+function holidayButton(feriados) {
   let btnHoliday = document.createElement("button");
   let btnContainer = document.querySelector(".buttons-container");
-  btnHoliday.innerText = "Feriados";
-  btnHoliday.className = "btn-holiday";
+  btnHoliday.innerText = feriados;
+  btnHoliday.classList.add("btn-holiday");
   btnContainer.appendChild(btnHoliday);
 }
-holidayButton();
+
+holidayButton("Feriados");
 
 /* Exercício 3:
 Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
 É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial com a cor "rgb(238,238,238)" .
 */
+
 function holidayButtonClick() {
   let btnHoliday = document.querySelector(".btn-holiday");
   btnHoliday.addEventListener("click", changeColor);
 }
+
 function changeColor() {
   let helper = document.querySelectorAll(".holiday");
   let newColor = "rgb(76, 164, 109)";
@@ -121,6 +127,7 @@ function changeColor() {
     }
   }
 }
+
 holidayButtonClick();
 
 /* Exercício 4:
@@ -128,25 +135,29 @@ Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie
 Adicione a este botão o ID "btn-friday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
-function fridayButton() {
+
+function fridayButton(friday) {
   let btnFriday = document.createElement("button");
   let btnContainer = document.querySelector(".buttons-container");
-  btnFriday.innerText = "Sexta-feira";
+  btnFriday.innerText = friday;
   btnFriday.id = "btn-friday";
   btnContainer.appendChild(btnFriday);
 }
-fridayButton();
+
+fridayButton("Sexta-feira");
 
 /* Exercício 5:
 Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
 É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias.
 */
+
 function fridayButtonClick() {
   let btnFriday = document.querySelector("#btn-friday");
   btnFriday.addEventListener("click", changeText);
 }
+
 function changeText() {
-  let helper = document.querySelectorAll(".friday");
+  let helper = document.getElementsByClassName("friday");
   let newText = "FRIDAY!!";
   let oldText = [4, 11, 18, 25];
   for (let index = 0; index < helper.length; index += 1) {
@@ -157,4 +168,27 @@ function changeText() {
     }
   }
 }
+
 fridayButtonClick();
+
+/* Exercício 6:
+Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
+*/
+
+function zoomUp(event) {
+  let day = event.target;
+  day.style.fontSize = "33px";
+}
+
+function zoomDown(event) {
+  let day = event.target;
+  day.style.fontSize = "20px";
+}
+
+function zoomSetup() {
+  let month = document.getElementById("days");
+  month.addEventListener('mouseover', zoomUp);
+  month.addEventListener('mouseout', zoomDown);
+}
+
+zoomSetup();
