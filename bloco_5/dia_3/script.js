@@ -222,3 +222,24 @@ function colorCode(color) {
 }
 
 colorCode("blue");
+
+/* Exercício 9:
+Implemente uma função que adiciona um evento que ao clicar no elemento com a tag <div> referente a cor da sua tarefa, atribua a este elemento a classe task selected , ou seja, quando sua tarefa possuir a classe task selected ela estará selecionada.
+Ao clicar novamente no elemento a sua classe deverá voltar a ser somente task , ou seja, esta tarefa está deixando de ser uma tarefa selecionada.
+*/
+
+function selectedColor(event) {
+  let color = event.target;
+  if (color.classList.contains('selected')) {
+    color.classList.remove('selected');
+  } else {
+    color.classList.add('selected');
+  }
+}
+
+function colorSelection() {
+  let tasks = document.querySelector(".my-tasks");
+  tasks.addEventListener('click', selectedColor);
+}
+
+colorSelection();
