@@ -114,19 +114,19 @@ function letterSpacingDown() {
   savePreferences();
 }
 
-spaceUp.addEventListener('click', letterSpacingUp);
-spaceDown.addEventListener('click', letterSpacingDown);
+spaceUp.addEventListener("click", letterSpacingUp);
+spaceDown.addEventListener("click", letterSpacingDown);
 
 function pageSetup() {
-  if(localStorage.length === 0) {
+  if (localStorage.length === 0) {
     return;
   }
-  content.style.backgroundColor = localStorage.getItem('background');
-  content.style.color = localStorage.getItem('color');
-  content.style.textShadow = localStorage.getItem('shadow');
-  content.style.fontSize = localStorage.getItem('fsize');
-  content.style.letterSpacing = localStorage.getItem('fspacing');
-  content.style.fontFamily = localStorage.getItem('ffamily');
+  content.style.backgroundColor = localStorage.getItem("background");
+  content.style.color = localStorage.getItem("color");
+  content.style.textShadow = localStorage.getItem("shadow");
+  content.style.fontSize = localStorage.getItem("fsize");
+  content.style.letterSpacing = localStorage.getItem("fspacing");
+  content.style.fontFamily = localStorage.getItem("ffamily");
 }
 
 pageSetup();
