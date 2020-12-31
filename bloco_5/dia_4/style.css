@@ -1,0 +1,34 @@
+main {
+  background-color: silver;
+  border: 7px ridge silver;
+  border-radius: 10px;
+  box-shadow: 1.5px 1.5px black;
+  margin: auto;
+  padding: 1em;
+  text-shadow: 1.2px 1.2px white;
+  width: 70%;
+}
+
+body {
+  background-color: rgb(253, 251, 251);
+}
+
+button {
+  background-color: yellow;
+  font-size: 15px;
+  text-shadow: 1.2px 1.2px white;
+}
+
+aside {
+  margin: 1em auto;
+  padding: 0.3em;
+  text-align: center;
+}
+
+aside div {
+  background-color: silver;
+  border: 5px ridge silver;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 0.2em;
+}
