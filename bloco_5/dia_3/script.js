@@ -95,10 +95,10 @@ Adicione a este botão a ID "btn-holiday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
 
-function holidayButton(feriados) {
+function holidayButton(holiday) {
   let btnHoliday = document.createElement("button");
   let btnContainer = document.querySelector(".buttons-container");
-  btnHoliday.innerText = feriados;
+  btnHoliday.innerText = holiday;
   btnHoliday.classList.add("btn-holiday");
   btnContainer.appendChild(btnHoliday);
 }
@@ -192,3 +192,17 @@ function zoomSetup() {
 }
 
 zoomSetup();
+
+/* Exercício 7:
+Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+*/
+
+function addTask(task) {
+  let span = document.createElement('span');
+  let tasks = document.querySelector(".my-tasks");
+  span.innerText = task;
+  tasks.appendChild(span);
+}
+
+addTask("Teste");
