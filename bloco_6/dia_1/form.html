@@ -32,8 +32,29 @@
           Casa, Apartamento
           Campo obrigatório
     -->
-    <form action="http://www.google.com/search" method="GET">
-      <input type="text" name="q" id="">
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" name="nome" id="nome" maxlength="40" required>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" maxlength="50" required>
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+        <label for="address">Endereço:</label>
+        <input type="text" name="address" id="address" maxlength="200" required>
+        <label for="city">Cidade:</label>
+        <input type="text" name="city" id="city" maxlength="28" required>
+        <label for="state">Estado:</label>
+        <select name="state" id="state" required>
+          <option></option>
+        </select>
+        <label for="house">Casa</label>
+        <input type="radio" name="type" id="house" value="house" required>
+        <label for="apartment">Apartamento</label>
+        <input type="radio" name="type" id="apartment" value="apartment" required>
+      </fieldset>
+      <br>
       <button type="submit">Enviar</button>
     </form>
     <script src="script.js"></script>
