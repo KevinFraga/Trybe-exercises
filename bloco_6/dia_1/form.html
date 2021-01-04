@@ -31,10 +31,28 @@
         Tipo - Radio Button
           Casa, Apartamento
           Campo obrigatório
+
+      2 - Crie outro <fieldset> para dados do seu último emprego:
+        Resumo do currículo - TextArea
+          Limite de 1000 caracteres
+          Campo obrigatório
+        Cargo - Texto
+          Limite de 40 caracteres
+          Campo obrigatório
+        Descrição do cargo - Texto
+          Limite de 500 caracteres
+          Campo obrigatório
+        Data de início - Texto
+          Verificar o formato da data dd/mm/aaaa .
+          O dia deve ser > 0 e <= 31.
+          O mês deve ser > 0 e <= 12.
+          O ano não pode ser negativo.
+          Caso alguma das condições for inválida no momento do envio do formulário, exibir mensagem de erro contextualizada.
+          Campo obrigatório
     -->
     <form action="" method="GET">
       <fieldset>
-        <legend>Dados pessoais</legend>
+        <legend>Dados Pessoais</legend>
         <label for="nome">Nome Completo:</label>
         <input type="text" name="nome" id="nome" maxlength="40" required>
         <label for="email">E-mail:</label>
@@ -53,6 +71,18 @@
         <input type="radio" name="type" id="house" value="house" required>
         <label for="apartment">Apartamento</label>
         <input type="radio" name="type" id="apartment" value="apartment" required>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <label for="resume">Resumo do Currículo:</label>
+        <input type="text" name="resume" id="resume" maxlength="1000" required>
+        <label for="job-title">Cargo:</label>
+        <input type="text" name="job-title" id="job-title" maxlength="40" required>
+        <label for="job-description">Descrição do Cargo:</label>
+        <input type="text" name="job-description" id="job-description" maxlength="500" required>
+        <label for="start-date">Data de Início:</label>
+        <input type="date" name="start-date" id="start-date" required>
       </fieldset>
       <br>
       <button type="submit">Enviar</button>
