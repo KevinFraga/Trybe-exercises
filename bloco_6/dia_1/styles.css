@@ -2,11 +2,11 @@ body {
   background-color: antiquewhite;
 }
 
-form {
+form, section {
   background-color: aliceblue;
   border: 1px solid black;
   border-radius: 10px;
-  margin: auto;
+  margin: 5px auto;
   padding: 1em;
   width: 80%;
 }

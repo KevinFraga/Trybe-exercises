@@ -49,44 +49,53 @@
           O ano não pode ser negativo.
           Caso alguma das condições for inválida no momento do envio do formulário, exibir mensagem de erro contextualizada.
           Campo obrigatório
+
+      3 - Logo abaixo do formulário, crie um botão que:
+        Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() .
+        Execute as validações que foram pedidas ao longo da montagem do formulário.
+        Monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+
+      4 - Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
     -->
     <form action="" method="GET">
       <fieldset>
         <legend>Dados Pessoais</legend>
         <label for="nome">Nome Completo:</label>
-        <input type="text" name="nome" id="nome" maxlength="40" required>
+        <input type="text" class="input" name="Nome" id="nome" maxlength="40" required>
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email" maxlength="50" required>
+        <input type="email" class="input" name="Email" id="email" maxlength="50" required>
         <label for="cpf">CPF:</label>
-        <input type="text" name="cpf" id="cpf" maxlength="11" required>
+        <input type="text" class="input" name="CPF" id="cpf" maxlength="11" required>
         <label for="address">Endereço:</label>
-        <input type="text" name="address" id="address" maxlength="200" required>
+        <input type="text" class="input" name="Endereço" id="address" maxlength="200" required>
         <label for="city">Cidade:</label>
-        <input type="text" name="city" id="city" maxlength="28" required>
+        <input type="text" class="input" name="Cidade" id="city" maxlength="28" required>
         <label for="state">Estado:</label>
-        <select name="state" id="state" required>
+        <select name="Estado" class="input" id="state" required>
           <option></option>
         </select>
         <label for="house">Casa</label>
-        <input type="radio" name="type" id="house" value="house" required>
+        <input type="radio" class="input" name="Tipo" id="house" value="Casa" required>
         <label for="apartment">Apartamento</label>
-        <input type="radio" name="type" id="apartment" value="apartment" required>
+        <input type="radio" class="input" name="Tipo" id="apartment" value="Apartamento" required>
       </fieldset>
       <br>
       <fieldset>
         <legend>Último Emprego</legend>
         <label for="resume">Resumo do Currículo:</label>
-        <input type="text" name="resume" id="resume" maxlength="1000" required>
+        <textarea name="Currículo" class="input" id="resume" cols="25" rows="2" maxlength="1000" required></textarea>
         <label for="job-title">Cargo:</label>
-        <input type="text" name="job-title" id="job-title" maxlength="40" required>
+        <input type="text" class="input" name="Cargo" id="job-title" maxlength="40" required>
         <label for="job-description">Descrição do Cargo:</label>
-        <input type="text" name="job-description" id="job-description" maxlength="500" required>
+        <textarea name="Descrição" class="input" id="job-description" cols="25" rows="2" maxlength="500" required></textarea>
         <label for="start-date">Data de Início:</label>
-        <input type="date" name="start-date" id="start-date" required>
+        <input type="date" class="input" name="Início" id="start-date" required>
       </fieldset>
       <br>
-      <button type="submit">Enviar</button>
+      <button type="button" id="submit">Enviar</button>
+      <button type="reset" id="reset">Limpar</button>
     </form>
+    <section id="cv"></section>
     <script src="script.js"></script>
   </body>
 </html>
