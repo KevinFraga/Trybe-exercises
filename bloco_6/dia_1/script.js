@@ -36,3 +36,11 @@ function readFormValues() {
 }
 
 submitBtn.addEventListener('click', readFormValues);
+
+function clearCV() {
+  while(cvShowcase.children.length > 0) {
+    cvShowcase.removeChild(cvShowcase.children[cvShowcase.children.length - 1]);
+  }
+}
+
+clearBtn.addEventListener('click', clearCV);
