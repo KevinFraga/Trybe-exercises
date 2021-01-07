@@ -2,7 +2,7 @@ const states = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT'
 const stateDropdown = document.getElementById('state');
 const submitBtn = document.getElementById('submit');
 const clearBtn = document.getElementById('reset');
-const inputList = document.getElementsByClassName('input');
+const inputList = document.getElementsByClassName('js');
 const cvShowcase = document.getElementById('cv');
 
 function statesSetup() {
@@ -40,6 +40,12 @@ submitBtn.addEventListener('click', readFormValues);
 function clearCV() {
   while(cvShowcase.children.length > 0) {
     cvShowcase.removeChild(cvShowcase.children[cvShowcase.children.length - 1]);
+  }
+  for (let index = 0; index < inputList.length; index += 1) {
+    inputList[index].value = '';
+    if (inputList[index].checked) {
+      inputList[index].checked = false;
+    }
   }
 }
 
