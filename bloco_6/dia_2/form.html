@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  </head>
+  <body>
+    <!-- 
+    Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
+    -->
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" class="input" name="Nome" id="nome" maxlength="40" required>
+        <label for="email">E-mail:</label>
+        <input type="email" class="input" name="E-mail" id="email" maxlength="50" required>
+        <label for="cpf">CPF:</label>
+        <input type="text" class="input" name="CPF" id="cpf" maxlength="11" required>
+        <label for="address">Endereço:</label>
+        <input type="text" class="input" name="Endereço" id="address" maxlength="200" required>
+        <label for="city">Cidade:</label>
+        <input type="text" class="input" name="Cidade" id="city" maxlength="28" required>
+        <label for="state">Estado:</label>
+        <select name="Estado" class="input" id="state" required>
+          <option></option>
+        </select>
+        <label for="house">Casa</label>
+        <input type="radio" class="input" name="Tipo" id="house" value="Casa" required>
+        <label for="apartment">Apartamento</label>
+        <input type="radio" class="input" name="Tipo" id="apartment" value="Apartamento" required>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Último Emprego</legend>
+        <label for="resume">Resumo do Currículo:</label>
+        <textarea name="Currículo" class="input" id="resume" cols="25" rows="2" maxlength="1000" required></textarea>
+        <label for="job-title">Cargo:</label>
+        <input type="text" class="input" name="Cargo" id="job-title" maxlength="40" required>
+        <label for="job-description">Descrição do Cargo:</label>
+        <textarea name="Descrição" class="input" id="job-description" cols="25" rows="2" maxlength="500" required></textarea>
+        <label for="start-date">Data de Início:</label>
+        <input type="date" class="input" name="Início" id="start-date" required>
+      </fieldset>
+      <br>
+      <button type="button" id="submit">Enviar</button>
+      <button type="reset" id="reset">Limpar</button>
+    </form>
+    <section id="cv"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
