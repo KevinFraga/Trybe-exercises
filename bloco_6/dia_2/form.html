@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+    <style>
+      main, section {
+        margin: auto;
+        position: relative;
+        top: 3em;
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    Adicione um framework CSS de sua escolha ao formulário que você construiu na última aula e o utilize para estilizar o formulário.
+    -->
+    <main>
+      <div class="field">
+        <label for="nome" class="label">Nome Completo:</label>
+        <div class="control">
+          <input type="text" class="input js" name="Nome" id="nome" maxlength="40" required>
+       </div>
+      </div>
+      <div class="field">
+        <label for="email" class="label">E-mail:</label>
+        <div class="control">
+          <input type="email" class="input js" name="E-mail" id="email" maxlength="50" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="cpf" class="label">CPF:</label>
+        <div class="control">
+          <input type="text" class="input js" name="CPF" id="cpf" maxlength="11" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="address" class="label">Endereço:</label>
+        <div class="control">
+          <input type="text" class="input js" name="Endereço" id="address" maxlength="200" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="city" class="label">Cidade:</label>
+        <div class="control">
+          <input type="text" class="input js" name="Cidade" id="city" maxlength="28" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="state" class="label">Estado:</label>
+        <div class="select">
+          <select name="Estado" class="input js" id="state" required>
+            <option></option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <div class="control">
+          <label for="house" class="radio">
+            <input type="radio" class="js" name="Tipo" id="house" value="Casa" required>
+            Casa
+          </label>
+          <label for="apartment" class="radio">
+            <input type="radio" class="js" name="Tipo" id="apartment" value="Apartamento" required>
+            Apartamento
+          </label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="resume" class="label">Resumo do Currículo:</label>
+        <div class="control">
+          <textarea name="Currículo" class="textarea js" id="resume" cols="25" rows="2" maxlength="1000" required></textarea>
+        </div>
+      </div>
+      <div class="field">
+        <label for="job-title" class="label">Cargo:</label>
+        <div class="control">
+          <input type="text" class="input js" name="Cargo" id="job-title" maxlength="40" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="job-description" class="label">Descrição do Cargo:</label>
+        <div class="control">
+          <textarea name="Descrição" class="textarea js" id="job-description" cols="25" rows="2" maxlength="500" required></textarea>
+        </div>
+      </div>      
+      <div class="field">
+        <label for="start-date" class="label">Data de Início:</label>
+        <div class="control">
+          <input type="date" class="input js" name="Início" id="start-date" required>
+        </div>
+      </div>
+      <div class="field">
+        <button type="button" id="submit">Enviar</button>
+        <button type="reset" id="reset">Limpar</button>
+      </div>      
+  </main>
+    <section id="cv"></section>
+    <script src="script.js"></script>
+  </body>
+</html>
