@@ -69,3 +69,24 @@ console.log(factorial(4));
 const factorialOneLiner = number => number > 1 ? number * factorial(number - 1) : 1
 
 console.log(factorialOneLiner(5));
+
+/*
+Crie uma função que receba uma frase e retorne qual a maior palavra.
+*/
+
+const longestWord = word => {
+  let helper = word.split(' ');
+  let answer = helper[0];
+  for (let index = 1; index < helper.length; index += 1) {
+    if (helper[index].length > answer.length) {
+      answer = helper[index];
+    }
+  }
+  return answer;
+}
+
+console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")); // retorna 'aconteceu'
+
+const longestOneLiner = word => word.split(' ').sort((a, b) => b.length - a.length)[0];
+
+console.log(longestOneLiner("Antônio foi no banheiro e não sabemos o que aconteceu"));
