@@ -90,3 +90,15 @@ console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu
 const longestOneLiner = word => word.split(' ').sort((a, b) => b.length - a.length)[0];
 
 console.log(longestOneLiner("Antônio foi no banheiro e não sabemos o que aconteceu"));
+
+/*
+Crie uma página que contenha:
+  Um botão ao qual será associado um event listener ;
+  Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+  Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
+*/
+const clickBtn = document.getElementById('counter-btn');
+const counter = document.getElementById('counter');
+let clickCount = 0;
+
+clickBtn.addEventListener('click', () => counter.innerText = clickCount += 1);
