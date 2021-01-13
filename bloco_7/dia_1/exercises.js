@@ -97,8 +97,32 @@ Crie uma página que contenha:
   Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
   Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
 */
+
 const clickBtn = document.getElementById('counter-btn');
 const counter = document.getElementById('counter');
 let clickCount = 0;
 
 clickBtn.addEventListener('click', () => counter.innerText = clickCount += 1);
+
+/*
+Crie um código JavaScript com a seguinte especificação:
+  Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string.
+  Um array com escopo global, que é o escopo do arquivo JS , nesse caso, contendo cinco strings com suas principais skills.
+  Função 2 : Escreva uma função que vai receber a string retornada da Função 1 como parâmetro. Essa função deve concatenar as skills do array global à string que foi passada para a Função 2 via parâmetro. Você deve ordenar os skills em ordem alfabética. Sua função deve retornar essa nova string.
+*/
+
+const skills = ['HTML', 'CSS', 'JavaScript', 'GitHub', 'NodeJS'];
+const greetings = 'Tryber x aqui!';
+
+const removeX = (name) => `${greetings.split(' x ')[0]} ${name} ${greetings.split(' x ')[1]}`;
+
+const concatenate = (header) => {
+  let answer = `${header} Minhas cinco principais habilidades são:`;
+  for (let index = 0; index < skills.length; index += 1) {
+    answer += `
+    ${skills.sort()[index]}`;
+  }
+  return answer;
+}
+
+console.log(concatenate(removeX('Kevin')));
