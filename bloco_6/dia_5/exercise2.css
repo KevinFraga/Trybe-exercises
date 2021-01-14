@@ -4,3 +4,55 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body {
+  background-color: antiquewhite;
+  margin: 1em;
+  padding: 1em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  width: 320px;
+}
+header {
+  display: flex;
+ }
+ aside {
+   display: flex;
+ }
+
+ @media screen and (max-width: 500px) {
+   aside {
+     display: none;
+   }
+   li {
+     width: 70px;
+   }
+   header p {
+     width: 30%;
+   }
+   footer {
+     display: none;
+   }
+ }
+ @media screen and (max-width: 1200px) {
+   .aside-two {
+     display: none;
+   }
+   li {
+     width: 270px;
+   }
+   header p {
+     width: 30%;
+   }
+   header li {
+     width: 100px;
+   }
+ }
