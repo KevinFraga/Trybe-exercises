@@ -104,3 +104,11 @@ function keyList(object) {
 }
 
 console.log(keyList(order));
+
+//Crie uma função para mostrar o tamanho de um objeto.
+
+function objectLength(object) {
+  return Object.entries(object).length;
+}
+
+console.log(objectLength(order));
