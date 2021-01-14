@@ -112,3 +112,11 @@ function objectLength(object) {
 }
 
 console.log(objectLength(order));
+
+//Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+
+function objectEntries(object) {
+  return Object.entries(object);
+}
+
+console.log(objectEntries(lesson1));
