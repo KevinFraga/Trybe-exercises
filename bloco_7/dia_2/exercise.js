@@ -154,3 +154,21 @@ function keyValue(object, keyIndex) {
 }
 
 console.log(keyValue(lesson1, 0));
+
+// 8) Crie uma função que verifique se o par (chave / valor) existe na função. Essa função deve possuir três parâmetros, sendo eles: o objeto, o nome da chave e o valor da chave.
+
+function verifyPair(object, key, value) {
+  const keyList = Object.keys(object);
+  const valueList = Object.values(object);
+  let answer = false;
+  for (let index = 0; index < keyList.length; index += 1) {
+    if (keyList[index] === key && valueList[index] === value) {
+      answer = true;
+    }
+  }
+  return answer;
+}
+
+console.log(verifyPair(lesson3, 'turno', 'noite'));
+
+console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
