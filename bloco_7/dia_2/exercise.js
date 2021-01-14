@@ -96,3 +96,11 @@ function addKey(object, key, value) {
 addKey(lesson2, 'turno', 'manhã');
 
 console.log(lesson2);
+
+// Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+
+function keyList(object) {
+  return Object.keys(object);
+}
+
+console.log(keyList(order));
