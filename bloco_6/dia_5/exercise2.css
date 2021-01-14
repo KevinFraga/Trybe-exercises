@@ -28,7 +28,7 @@ header {
    display: flex;
  }
 
- @media screen and (min-width: 400px) {
+ @media screen and (max-width: 500px) {
    aside {
      display: none;
    }
@@ -40,5 +40,19 @@ header {
    }
    footer {
      display: none;
+   }
+ }
+ @media screen and (max-width: 1200px) {
+   .aside-two {
+     display: none;
+   }
+   li {
+     width: 270px;
+   }
+   header p {
+     width: 30%;
+   }
+   header li {
+     width: 100px;
    }
  }
