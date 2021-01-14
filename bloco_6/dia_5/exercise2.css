@@ -4,3 +4,41 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+body {
+  background-color: antiquewhite;
+  margin: 1em;
+  padding: 1em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+}
+li {
+  width: 320px;
+}
+header {
+  display: flex;
+ }
+ aside {
+   display: flex;
+ }
+
+ @media screen and (min-width: 400px) {
+   aside {
+     display: none;
+   }
+   li {
+     width: 70px;
+   }
+   header p {
+     width: 30%;
+   }
+   footer {
+     display: none;
+   }
+ }
