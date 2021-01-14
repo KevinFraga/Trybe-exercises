@@ -120,3 +120,17 @@ function objectEntries(object) {
 }
 
 console.log(objectEntries(lesson1));
+
+//Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3.
+
+function lessons() {
+  let answer = {};
+  answer.lesson1 = Object.assign({}, lesson1);
+  answer.lesson2 = Object.assign({}, lesson2);
+  answer.lesson3 = Object.assign({}, lesson3);
+  return answer;
+};
+
+const allLessons = lessons();
+
+console.log(allLessons);
