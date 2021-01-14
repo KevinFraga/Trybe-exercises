@@ -146,3 +146,11 @@ function numberOfStudents(school) {
 }
 
 console.log(numberOfStudents(allLessons));
+
+// 7) Crie uma função que obtenha o valor da chave de acordo com a sua posição no objeto.
+
+function keyValue(object, keyIndex) {
+  return Object.values(object)[keyIndex];
+}
+
+console.log(keyValue(lesson1, 0));
