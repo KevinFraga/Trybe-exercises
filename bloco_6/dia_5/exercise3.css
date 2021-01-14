@@ -80,3 +80,13 @@
   padding: 20px;
   height: 1%;
 }
+
+@media print {
+  #header, #navigation, #footer {
+    display: none;
+  }
+  #content-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
