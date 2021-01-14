@@ -36,7 +36,7 @@ const order = {
   },
 };
 
-/*
+/* 1)
 Complete a função customerInfo() para que seu retorno seja similar a "Olá Ana Silveira, entrega para: Rafael Andrade, Telefone: 11-98763-1416, R. Rua das Flores, Nº: 389, AP: 701".
   Note que o parâmetro da função já está sendo passado na chamada da função.
 */
@@ -49,7 +49,7 @@ const customerInfo = (order) => {
 
 customerInfo(order);
 
-/*
+/* 2)
 Complete a função orderModifier() para que seu retorno seja similar a "Olá Luiz Silva, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ 50,00."
   Modifique o nome da pessoa compradora.
   Modifique o valor total da compra para R$ 50,00.
@@ -87,7 +87,7 @@ const lesson3 = {
   turno: 'noite',
 };
 
-// Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
+// 1) Crie uma função para adicionar o turno da manhã na lesson2 . Essa função deve possuir três parâmetros, sendo eles: o objeto a ser modificado, a chave que deverá ser adicionada e o valor dela.
 
 function addKey(object, key, value) {
   object[key] = value;
@@ -97,7 +97,7 @@ addKey(lesson2, 'turno', 'manhã');
 
 console.log(lesson2);
 
-// Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+// 2) Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
 function keyList(object) {
   return Object.keys(object);
@@ -105,7 +105,7 @@ function keyList(object) {
 
 console.log(keyList(order));
 
-//Crie uma função para mostrar o tamanho de um objeto.
+// 3) Crie uma função para mostrar o tamanho de um objeto.
 
 function objectLength(object) {
   return Object.entries(object).length;
@@ -113,7 +113,7 @@ function objectLength(object) {
 
 console.log(objectLength(order));
 
-//Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
+// 4) Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro.
 
 function objectEntries(object) {
   return Object.entries(object);
@@ -121,7 +121,7 @@ function objectEntries(object) {
 
 console.log(objectEntries(lesson1));
 
-//Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3.
+// 5) Crie um objeto de nome allLessons , que deve agrupar todas as aulas através do Object.assign . Cada chave desse novo objeto será uma aula, sendo essas chaves: lesson1 , lesson2 e lesson3.
 
 function lessons() {
   let answer = {};
@@ -134,3 +134,15 @@ function lessons() {
 const allLessons = lessons();
 
 console.log(allLessons);
+
+// 6) Usando o objeto criado no exercício 5, crie uma função que retorne o número total de estudantes em todas as aulas.
+
+function numberOfStudents(school) {
+  let answer = 0;
+  for (const lesson in school) {
+    answer += school[lesson].numeroEstudantes;
+  }
+  return answer;
+}
+
+console.log(numberOfStudents(allLessons));
