@@ -215,3 +215,19 @@ words = ['plant', 'shelf', 'arrow', 'bird'];
 expected = -1;
 output = findTheNeedle(words, 'plat');
 assert.strictEqual(output, expected);
+
+// 10) Use a variável parameter como parâmetro da função abaixo, escreva testes para verificar se a mesma está retornando como se vê na variável result e, caso não esteja, altere o código para que ele passe nos testes.
+
+const greetPeople = (people) => {
+  let greeting = [];
+
+  for (let person = 0; person < people.length; person += 1) {
+    greeting[person] = `Hello ${people[person]}`;
+  }
+  return greeting;
+};
+
+const parameter1 = ['Irina', 'Ashleigh', 'Elsa'];
+const result1 = ['Hello Irina', 'Hello Ashleigh', 'Hello Elsa'];
+
+assert.deepStrictEqual(greetPeople(parameter1), result1);
