@@ -163,11 +163,11 @@ function wordLengths(word) {
   return answer;
 }
 
-const words = ['sun', 'potato', 'roundabout', 'pizza'];
+const words1 = ['sun', 'potato', 'roundabout', 'pizza'];
 const expected2 = [3, 6, 10, 5];
 
 assert.strictEqual(typeof wordLengths, 'function');
-const output2 = wordLengths(words);
+const output2 = wordLengths(words1);
 assert.deepStrictEqual(output2, expected2);
 
 // 8) Escreva a função sumAllNumbers para passar nos testes já implementados.
@@ -187,3 +187,31 @@ const output3 = sumAllNumbers(numbers);
 
 assert.strictEqual(typeof sumAllNumbers, 'function');
 assert.strictEqual(output3, expected3);
+
+// 9) Escreva a função findTheNeedle para passar nos testes já implementados.
+
+// escreva a função findTheNeedle aqui
+function findTheNeedle(array, string) {
+  let answer = -1;
+  for ( let index = 0; index < array.length; index += 1) {
+    if (array[index] === string) {
+      answer = index;
+    }
+  }
+  return answer;
+}
+
+let words = ['house', 'train', 'slide', 'needle', 'book'];
+let expected = 3;
+let output = findTheNeedle(words, 'needle');
+assert.strictEqual(output, expected);
+
+words = ['plant', 'shelf', 'arrow', 'bird'];
+expected = 0;
+output = findTheNeedle(words, 'plant');
+assert.strictEqual(output, expected);
+
+words = ['plant', 'shelf', 'arrow', 'bird'];
+expected = -1;
+output = findTheNeedle(words, 'plat');
+assert.strictEqual(output, expected);
