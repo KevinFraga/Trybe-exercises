@@ -145,9 +145,27 @@ function addOne(array) {
 
 const myArray = [31, 57, 12, 5];
 const unchanged = [31, 57, 12, 5];
-const expected = [32, 58, 13, 6];
-const output = addOne(myArray);
+const expected1 = [32, 58, 13, 6];
+const output1 = addOne(myArray);
 
 assert.strictEqual(typeof addOne, 'function');
-assert.deepStrictEqual(output, expected);
+assert.deepStrictEqual(output1, expected1);
 assert.deepStrictEqual(myArray, unchanged);
+
+// 7) Escreva a função wordLengths para passar nos testes já implementados.
+
+// escreva a função wordLengths aqui
+function wordLengths(word) {
+  let answer = [];
+  for (let index = 0; index < word.length; index += 1) {
+    answer[index] = word[index].length;
+  }
+  return answer;
+}
+
+const words = ['sun', 'potato', 'roundabout', 'pizza'];
+const expected2 = [3, 6, 10, 5];
+
+assert.strictEqual(typeof wordLengths, 'function');
+const output2 = wordLengths(words);
+assert.deepStrictEqual(output2, expected2);
