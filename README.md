@@ -24,4 +24,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo [:heavy_check_mark:]
 
-##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários [:hourglass_flowing_sand:]
+##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários [:heavy_check_mark:]
+
+<!-- :hourglass_flowing_sand: -->
