@@ -169,3 +169,21 @@ const expected2 = [3, 6, 10, 5];
 assert.strictEqual(typeof wordLengths, 'function');
 const output2 = wordLengths(words);
 assert.deepStrictEqual(output2, expected2);
+
+// 8) Escreva a função sumAllNumbers para passar nos testes já implementados.
+
+// escreva a função sumAllNumbers aqui
+function sumAllNumbers(numb) {
+  let answer = 0;
+  for (let index = 0; index < numb.length; index += 1) {
+    answer += numb[index];
+  }
+  return answer;
+}
+
+const numbers = [9, 23, 10, 3, 8];
+const expected3 = 53;
+const output3 = sumAllNumbers(numbers);
+
+assert.strictEqual(typeof sumAllNumbers, 'function');
+assert.strictEqual(output3, expected3);
