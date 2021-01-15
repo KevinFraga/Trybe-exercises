@@ -48,9 +48,9 @@ function myRemove(arr, item) {
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 3), [ 1, 2, 4 ]);
 assert.notDeepStrictEqual(myRemove([1, 2, 3, 4], 3), [ 1, 2, 3, 4 ]);
 
-const array = [1, 2, 3, 4, 5];
-myRemove(array, 5);
-assert.deepStrictEqual(array, [1, 2, 3, 4, 5]);
+const array2 = [1, 2, 3, 4, 5];
+myRemove(array2, 5);
+assert.deepStrictEqual(array2, [1, 2, 3, 4, 5]);
 
 assert.deepStrictEqual(myRemove([1, 2, 3, 4], 5), [1, 2, 3, 4]);
 
@@ -131,3 +131,23 @@ const obj3 = {
 
 assert.deepStrictEqual(obj1, obj2);
 assert.notDeepStrictEqual(obj1, obj3);
+
+// 6) Escreva a função addOne para passar nos testes já implementados.
+
+// escreva a função addOne aqui
+function addOne(array) {
+  let answer = [];
+  for (let index = 0; index < array.length; index += 1) {
+    answer[index] = array[index] + 1;
+  }
+  return answer;
+}
+
+const myArray = [31, 57, 12, 5];
+const unchanged = [31, 57, 12, 5];
+const expected = [32, 58, 13, 6];
+const output = addOne(myArray);
+
+assert.strictEqual(typeof addOne, 'function');
+assert.deepStrictEqual(output, expected);
+assert.deepStrictEqual(myArray, unchanged);
