@@ -26,4 +26,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários [:heavy_check_mark:]
 
+##### Bloco 8: Higher Order Functions do JavaScript ES6 [:hourglass_flowing_sand:]
+
 <!-- :hourglass_flowing_sand: -->
