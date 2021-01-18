@@ -1,4 +1,4 @@
-# Testes unitários em JavaScript
+# :sunrise: :three: Testes unitários em JavaScript
 
 :ballot_box_with_check: Testando nosso código com assert do Node.JS.
 
