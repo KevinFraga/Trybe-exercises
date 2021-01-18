@@ -2,6 +2,6 @@
 
 Funções de Alta Ordem :tophat:
 
-Recebem outras funções como parâmetros :exploding_head:
+Recebem outras funções como parâmetro :exploding_head:
 
 Exercícios do Bloco :eight:
