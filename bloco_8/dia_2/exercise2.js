@@ -97,5 +97,5 @@ function nameAndAge() {
   return books.sort((book1, book2) => (book1.releaseYear - book1.author.birthYear) - (book2.releaseYear - book2.author.birthYear))
   .map(book => ({age: book.releaseYear - book.author.birthYear, author: book.author.name}));
 }
-nameAndAge();
-//assert.deepStrictEqual(nameAndAge(), expectedResult);
+
+assert.deepStrictEqual(nameAndAge(), expectedResult);
