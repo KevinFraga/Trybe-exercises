@@ -27,11 +27,12 @@ const number_promise = new Promise((resolve, reject) => {
   const numbers = [];
   let sum;
   for (let index = 0; index < 10; index += 1) numbers[index] = Math.ceil(Math.random() * 50);
-  sum = numbers.map(number => number * number).reduce((acc, cur) => acc + cur, 0);
+  sum = numbers.map(number => number * number).reduce((acc, cur) => acc + cur);
   if (sum < 8000) resolve(sum);
   else reject(sum);
 })
   .then(response => multiplier.map(mult => response/mult))
+  .then(response => response.reduce((acc, cur) => acc + cur))
 //  .then(response => console.log(`A Promessa deu certo, a soma foi ${response}`))
 //  .catch(response => console.log(`A promessa falhou, a soma foi ${response}`));
   .catch(response => console.log(`(${response}) É mais de oito mil! Essa promise deve estar quebrada!`));
@@ -40,5 +41,7 @@ const number_promise = new Promise((resolve, reject) => {
 const multiplier = [2, 3, 5, 10];
 
 // 4 - Quando a Promise for rejeitada, imprima, via console.log , a frase "É mais de oito mil! Essa promise deve estar quebrada!"
+
+// 5 - Quando a Promise for bem-sucedida, encadeie nela uma segunda Promise que some os elementos do array.
 
 window.onload = () => fetchJoke();
