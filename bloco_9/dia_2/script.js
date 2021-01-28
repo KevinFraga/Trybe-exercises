@@ -33,9 +33,12 @@ const number_promise = new Promise((resolve, reject) => {
 })
   .then(response => multiplier.map(mult => response/mult))
 //  .then(response => console.log(`A Promessa deu certo, a soma foi ${response}`))
-  .catch(response => console.log(`A promessa falhou, a soma foi ${response}`));
+//  .catch(response => console.log(`A promessa falhou, a soma foi ${response}`));
+  .catch(response => console.log(`(${response}) É mais de oito mil! Essa promise deve estar quebrada!`));
 
 // 3 - Quando a promise for resolvida com sucesso, retorne o resultado da divisão desse número por 2, 3, 5 e 10 em um array.
 const multiplier = [2, 3, 5, 10];
+
+// 4 - Quando a Promise for rejeitada, imprima, via console.log , a frase "É mais de oito mil! Essa promise deve estar quebrada!"
 
 window.onload = () => fetchJoke();
