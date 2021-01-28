@@ -31,7 +31,11 @@ const number_promise = new Promise((resolve, reject) => {
   if (sum < 8000) resolve(sum);
   else reject(sum);
 })
-  .then(response => console.log(`A Promessa deu certo, a soma foi ${response}`))
+  .then(response => multiplier.map(mult => response/mult))
+//  .then(response => console.log(`A Promessa deu certo, a soma foi ${response}`))
   .catch(response => console.log(`A promessa falhou, a soma foi ${response}`));
+
+// 3 - Quando a promise for resolvida com sucesso, retorne o resultado da divisão desse número por 2, 3, 5 e 10 em um array.
+const multiplier = [2, 3, 5, 10];
 
 window.onload = () => fetchJoke();
