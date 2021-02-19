@@ -14,12 +14,12 @@ A terceira deve receber três strings e concatená-las.
 jest.mock('./string.js');
 
 test('mock implementations', () => {
-  string.uppperCase.mockImplementation((string) => string.toLowerCase());
+  string.upperCase.mockImplementation((string) => string.toLowerCase());
   string.firstLetter.mockImplementation((string) => string.slice(-1));
   string.concat.mockImplementation(
     (string1, string2, string3) => `${string1}${string2}${string3}`
   );
-  expect(string.uppperCase('Teste')).toBe('teste');
+  expect(string.upperCase('Teste')).toBe('teste');
   expect(string.firstLetter('teste')).toBe('e');
   expect(string.concat('a', 'b', 'c')).toBe('abc');
 });
