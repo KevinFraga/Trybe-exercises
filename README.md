@@ -30,6 +30,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 9: JavaScript Assíncrono e Promises [:heavy_check_mark:]
 
-##### Bloco 10: Testes automatizados com Jest [:hourglass_flowing_sand:]
+##### Bloco 10: Testes automatizados com Jest [:heavy_check_mark:]
 
 <!-- :hourglass_flowing_sand: -->
