@@ -1,3 +1,3 @@
 # :sunrise::two: Jest - Testes Assíncronos
 
-Testes assíncronos com Jest :stopwatch:
+:stopwatch: Testes assíncronos com Jest
