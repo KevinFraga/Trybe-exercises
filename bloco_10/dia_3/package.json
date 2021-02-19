@@ -1,0 +1,15 @@
+{
+  "name": "dia_3",
+  "version": "1.0.0",
+  "description": ":video_game: Simulando o comportamento de funções com o mock",
+  "main": "random.test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
