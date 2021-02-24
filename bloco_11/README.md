@@ -2,4 +2,4 @@
 
 Iniciamos nossa jornada com Front-End :climbing_man::mountain:
 
-Aprendendo a programar com React :atom:
+Aprendendo a programar com React :electron:
