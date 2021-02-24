@@ -1,0 +1,17 @@
+.pokedex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.pkmn {
+  border: 1px black solid;
+  display: flex;
+  margin: 5px;
+  justify-content: space-evenly;
+  flex-basis: 49%;
+}
+
+.pkmn-image {
+  align-self: center;
+}
