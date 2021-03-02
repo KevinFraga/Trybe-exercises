@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import PersonalForm from './PersonalForm';
+import ProfessionalForm from './ProfessionalForm';
 
 class Form extends Component {
   render() {
-    const { changes, blur } = this.props;
+    const { changes, blur, submit, clear } = this.props;
     return (
-      <PersonalForm changes={changes} blur={blur} />
+      <main>
+        <PersonalForm changes={changes} blur={blur} />
+        <ProfessionalForm changes={changes} />
+        <button onClick={submit}>Enviar</button>
+        <button onClick={clear}>Limpar</button>
+      </main>
     );
   }
 }

@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
 import Form from './Form';
+import FormData from './FormData';
 import './App.css';
+
+const initState = {
+  name: '',
+  email: '',
+  cpf: '',
+  address: '',
+  city: '',
+  state: '',
+  addressType: '',
+  resume: '',
+  role: '',
+  roleDescription: '',
+  formError: {},
+  submitted: false,
+}
 
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: '',
-      email: '',
-      cpf: '',
-      address: '',
-      city: '',
-      state: '',
-      addressType: '',
-      resume: '',
-      role: '',
-      roleDescription: '',
-      formError: {},
-      submitted: false,
-    }
+    this.state = initState;
     this.changes = this.changes.bind(this);
     this.blur = this.blur.bind(this);
+    this.clear = this.clear.bind(this);
+    this.submit = this.submit.bind(this);
   }
 
   validates(name, value) {
@@ -57,11 +62,22 @@ class App extends Component {
     this.stateSetter(name, value);
   }
 
+  clear() {
+    this.setState(initState);
+  }
+
+  submit() {
+    this.setState({
+      submitted: true,
+    });
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Form changes={this.changes} blur={this.blur} />
+          <Form changes={this.changes} blur={this.blur} clear={this.clear} submit={this.submit} />
+          {this.state.submitted && <FormData currState={this.state} />}
         </header>
       </div>
     );
