@@ -19,18 +19,49 @@ class App extends Component {
       formError: {},
       submitted: false,
     }
+    this.changes = this.changes.bind(this);
+    this.blur = this.blur.bind(this);
+  }
+
+  validates(name, value) {
+    switch (name) {
+      case 'email' :
+        const isValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{3})$/i);
+        return isValid ? '' : 'is invalid';
+      default:
+        break;
+    }
+    return '';
+  }
+
+  stateSetter(name, value) {
+    this.setState((state) => ({
+      [name]: value,
+      formError: {
+        ...state.formError,
+        [name]: this.validates(name, value),
+      },
+    }));
   }
 
   changes(event) {
-    const { name, value } = event.target;
-    this.setState({ [name]: value });
+    let { name, value } = event.target;
+    if (name === 'name') value = value.toUpperCase();
+    if (name === 'address') value = value.replace(/[^\w\s]/gi, '');
+    this.stateSetter(name, value);
   }
   
+  blur(event) {
+    let { name, value } = event.target;
+    if (name === 'city') value = value.match(/^\d/) ? '' : value;
+    this.stateSetter(name, value);
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Form />
+          <Form changes={this.changes} blur={this.blur} />
         </header>
       </div>
     );
