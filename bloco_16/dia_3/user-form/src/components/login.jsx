@@ -55,7 +55,7 @@ class Login extends Component {
             </label>
           </div>
         </form>
-        <Link to="/Clients" onClick={ () => this.props.loginDispatch(this.state) }>
+        <Link to="/ClientList" onClick={ () => this.props.loginDispatch(this.state) }>
           Entrar
         </Link>
       </div>

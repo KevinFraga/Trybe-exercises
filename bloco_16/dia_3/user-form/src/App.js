@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './components/home';
 import Login from './components/login';
 import Failed from './components/failed';
-import Clients from './components/clients';
+import ClientList from './components/clientList';
+import NewClient from './components/newClient';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={ Home } />
         <Route path="/login" component={ Login } />
-        <Route path="/clients" component={ Clients } />
+        <Route path="/clientList" component={ ClientList } />
+        <Route path="/newClient" component={ NewClient } />
         <Route path="/" component={ Failed } />
       </Switch>
     </BrowserRouter>
