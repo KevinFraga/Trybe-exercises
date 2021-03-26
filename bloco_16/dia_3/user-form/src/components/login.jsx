@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { newAction } from '../actions';
+import { loginAction } from '../actions';
 
 class Login extends Component {
   constructor(props) {
@@ -64,7 +64,7 @@ class Login extends Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-  loginDispatch: state => dispatch(newAction(state)),
+  loginDispatch: state => dispatch(loginAction(state)),
 });
 
 export default connect(null, mapDispatchToProps)(Login);
