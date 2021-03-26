@@ -1,14 +1,14 @@
 const INITIAL_STATE = {
-  client: {
-    name: '',
-    age: 0,
-    email: '',
-  },
+  clientList: [],
 };
 
 const newClientReducer = (state = INITIAL_STATE, action) => {
   switch(action.type) {
-    case 'NEW_CLIENT': return { client: action.state.client };
+    case 'NEW_CLIENT': {
+      const clientList = state.clientList.map((client) => client);
+      clientList.push(action.state.client)
+      return { clientList };
+    }
     default: return state;
   }
 }
