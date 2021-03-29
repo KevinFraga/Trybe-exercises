@@ -38,4 +38,12 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 12: Componentes com Estado, Eventos e Formulários com React [:heavy_check_mark:]
 
+##### Bloco 13: Ciclo de Vida de Componentes e React Router [:hourglass_flowing_sand:]
+
+##### Bloco 14: Metodologias Ágeis [:heavy_check_mark:]
+
+##### Bloco 15: Testes automatizados com React Testing Library [:hourglass_flowing_sand:]
+
+##### Bloco 16: Gerenciamento de estado com Redux [:hourglass_flowing_sand:]
+
 <!-- :hourglass_flowing_sand: -->
