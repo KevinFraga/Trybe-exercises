@@ -3,3 +3,5 @@
 Iniciamos nossa jornada com Front-End :climbing_man::mountain:
 
 Aprendendo a programar com React :electron:
+
+Exercícios do Bloco :one::one:
