@@ -48,6 +48,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 17: Projeto Jogo de Trivia [:heavy_check_mark:]
 
-##### Bloco 18: Context API e React Hooks [:hourglass_flowing_sand:]
+##### Bloco 18: Context API e React Hooks [:heavy_check_mark:]
 
 <!-- :hourglass_flowing_sand: -->
