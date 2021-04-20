@@ -46,4 +46,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 16: Gerenciamento de estado com Redux [:hourglass_flowing_sand:]
 
+##### Bloco 17: Projeto Jogo de Trivia [:heavy_check_mark:]
+
+##### Bloco 18: Context API e React Hooks [:heavy_check_mark:]
+
 <!-- :hourglass_flowing_sand: -->
