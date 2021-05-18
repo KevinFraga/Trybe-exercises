@@ -44,10 +44,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 15: Testes automatizados com React Testing Library [:heavy_check_mark:]
 
-##### Bloco 16: Gerenciamento de estado com Redux [:hourglass_flowing_sand:]
+##### Bloco 16: Gerenciamento de estado com Redux [:heavy_check_mark:]
 
 ##### Bloco 17: Projeto Jogo de Trivia [:heavy_check_mark:]
 
 ##### Bloco 18: Context API e React Hooks [:heavy_check_mark:]
+
+##### Bloco 19: Projeto App de Receitas [:heavy_check_mark:]
+
+## Desenvolvimento Back-end
+
+##### Bloco 20: Introdução à SQL [:hourglass_flowing_sand:]
 
 <!-- :hourglass_flowing_sand: -->
