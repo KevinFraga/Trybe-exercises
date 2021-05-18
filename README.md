@@ -50,4 +50,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 18: Context API e React Hooks [:heavy_check_mark:]
 
+##### Bloco 19: Projeto App de Receitas [:heavy_check_mark:]
+
+## Desenvolvimento Back-end
+
+##### Bloco 20: Introdução à SQL [:hourglass_flowing_sand:]
+
 <!-- :hourglass_flowing_sand: -->
