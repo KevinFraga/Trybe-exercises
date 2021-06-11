@@ -54,6 +54,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Desenvolvimento Back-end
 
-##### Bloco 20: Introdução à SQL [:hourglass_flowing_sand:]
+##### Bloco 20: Introdução à SQL [:heavy_check_mark:]
+
+##### Bloco 21: Funções SQL, Joins e Subqueries [:hourglass_flowing_sand:]
 
 <!-- :hourglass_flowing_sand: -->
