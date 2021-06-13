@@ -112,3 +112,4 @@ WHERE
             Pixar.Movies
         WHERE
             t.id = theater_id);
+
