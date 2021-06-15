@@ -3,3 +3,5 @@
 Continuamos com SQL :back::end:
 
 Agora com queries mais complexas :school:
+
+Exercícios do Bloco :two::one:

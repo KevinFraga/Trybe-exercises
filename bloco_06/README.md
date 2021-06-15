@@ -4,4 +4,4 @@ Responsividade finalmente!! :man_technologist:
 
 Agora os projetos ficarão bem mais bonitos. :star_struck:
 
-Exercícios do bloco :six:
+Exercícios do Bloco :six:
