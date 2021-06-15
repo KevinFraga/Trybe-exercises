@@ -3,3 +3,5 @@
 Fundamentos do Desenvolvimento Web :computer:
 
 Entendendo GitHub e criando nosso repositório :man_student:
+
+Exercícios do Bloco :two:

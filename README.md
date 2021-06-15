@@ -12,23 +12,23 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Fundamentos do Desenvolvimento Web
 
-##### Bloco 1: Introdução - Unix & Shell  [:heavy_check_mark:]
+##### Bloco 01: Introdução - Unix & Shell  [:heavy_check_mark:]
 
-##### Bloco 2: Git & GitHub  [:heavy_check_mark:]
+##### Bloco 02: Git & GitHub  [:heavy_check_mark:]
 
-##### Bloco 3: Introdução - HTML & CSS  [:heavy_check_mark:]
+##### Bloco 03: Introdução - HTML & CSS  [:heavy_check_mark:]
 
-##### Bloco 4: Introdução à JavaScript e Lógica de Programação [:heavy_check_mark:]
+##### Bloco 04: Introdução à JavaScript e Lógica de Programação [:heavy_check_mark:]
 
-##### Bloco 5: JavaScript: DOM, Eventos e Web Storage [:heavy_check_mark:]
+##### Bloco 05: JavaScript: DOM, Eventos e Web Storage [:heavy_check_mark:]
 
-##### Bloco 6: HTML e CSS: Forms, Flexbox e Responsivo [:heavy_check_mark:]
+##### Bloco 06: HTML e CSS: Forms, Flexbox e Responsivo [:heavy_check_mark:]
 
-##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários [:heavy_check_mark:]
+##### Bloco 07: Introdução à JavaScript ES6 e Testes Unitários [:heavy_check_mark:]
 
-##### Bloco 8: Higher Order Functions do JavaScript ES6 [:heavy_check_mark:]
+##### Bloco 08: Higher Order Functions do JavaScript ES6 [:heavy_check_mark:]
 
-##### Bloco 9: JavaScript Assíncrono e Promises [:heavy_check_mark:]
+##### Bloco 09: JavaScript Assíncrono e Promises [:heavy_check_mark:]
 
 ##### Bloco 10: Testes automatizados com Jest [:heavy_check_mark:]
 
@@ -58,6 +58,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 21: Funções SQL, Joins e Subqueries [:heavy_check_mark:]
 
-##### Bloco 22: Normalização e Modelagem de Banco de Dados [:hourglass_flowing_sand:]
+##### Bloco 22: Normalização e Modelagem de Banco de Dados [:heavy_check_mark:]
+
+##### Bloco 23: Introdução ao MongoDB [:hourglass_flowing_sand:]
+
+##### Bloco 24: MongoDB: Updates Simples e Complexos [:hourglass_flowing_sand:]
+
+##### Bloco 25: MongoDB: Aggregation Framework [:hourglass_flowing_sand:]
+
+##### Bloco 26: Introdução ao desenvolvimento Web com NodeJS [:hourglass_flowing_sand:]
 
 <!-- :hourglass_flowing_sand: -->

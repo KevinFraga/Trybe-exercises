@@ -2,4 +2,4 @@
 
 E finalmente comecamos a codar! :rocket: :smile:
 
-Aqui ficarão todos os exercicios do bloco :three:
+Exercícios do Bloco :three:
