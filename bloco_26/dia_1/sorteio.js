@@ -15,6 +15,7 @@ function sorteio() {
   const chute = readline.questionInt('Escolha um número inteiro entre 0 e 10: ');
   const sorteado = Math.round(Math.random() * 10);
   console.log(chute === sorteado ? 'Parabéns, número correto!' : `Opa, não foi dessa vez. O número era ${sorteado}`);
+  if (readline.keyInYN('Quer jogar novamente?')) sorteio();
 }
 
 sorteio();
