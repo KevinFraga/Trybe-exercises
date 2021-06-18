@@ -2,4 +2,4 @@
 
 Nova etapa de nossa jornada, agora com NodeJS :back::end:
 
-Exercícios do Bloco :two::three:
+Exercícios do Bloco :two::six:
