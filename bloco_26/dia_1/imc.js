@@ -32,8 +32,8 @@
 const readline = require('readline-sync');
 
 function imc() {
-  const peso = readline.questionFloat('Qual o seu peso em kg?');
-  const altura = readline.questionFloat('Qual a sua altura em m?');
+  const peso = readline.questionFloat('Qual o seu peso em kg? ');
+  const altura = readline.questionFloat('Qual a sua altura em m? ');
   const imc = (peso / Math.pow(altura, 2)).toFixed(2);
   const categorias = [
     'Abaixo do peso (magreza)',
