@@ -60,7 +60,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 22: Normalização e Modelagem de Banco de Dados [:heavy_check_mark:]
 
-##### Bloco 23: Introdução ao MongoDB [:hourglass_flowing_sand:]
+##### Bloco 23: Introdução ao MongoDB [:heavy_check_mark:]
 
 ##### Bloco 24: MongoDB: Updates Simples e Complexos [:hourglass_flowing_sand:]
 
