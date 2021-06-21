@@ -62,7 +62,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 23: Introdução ao MongoDB [:heavy_check_mark:]
 
-##### Bloco 24: MongoDB: Updates Simples e Complexos [:hourglass_flowing_sand:]
+##### Bloco 24: MongoDB: Updates Simples e Complexos [:heavy_check_mark:]
 
 ##### Bloco 25: MongoDB: Aggregation Framework [:hourglass_flowing_sand:]
 
