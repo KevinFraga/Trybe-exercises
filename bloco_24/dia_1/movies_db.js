@@ -1,4 +1,4 @@
-db.movies.insertMany({
+db.movies.insertMany([{
   "title": "Batman",
   "category": [ "action", "adventure" ],
   "imdbRating": 7.6,
@@ -13,4 +13,4 @@ db.movies.insertMany({
   "title": "Home Alone",
   "category": [ "family", "comedy" ],
   "imdbRating": 7.4
-});
+}]);
