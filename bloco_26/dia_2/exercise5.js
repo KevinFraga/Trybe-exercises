@@ -17,7 +17,7 @@ function oneToMany() {
   })
 }
 
-// oneToMany();
+oneToMany();
 
 function manyToOne() {
   Promise.all([
