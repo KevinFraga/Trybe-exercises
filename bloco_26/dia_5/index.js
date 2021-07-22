@@ -186,4 +186,57 @@ app.get('/:operacao/:numero1/:numero2', (req, res, _next) => {
   return res.status(200).json(answer);
 });
 
+app.delete('/recipe/:id', (req, res, _next) => {
+  const recipe = recipes.find(({ id }) => id === parseInt(req.params.id));
+  if(!recipe) return res.status(404).json({ message: "recipe not found" });
+  recipes.splice(recipes.indexOf(({ id }) => id === parseInt(req.params.id)), 1);
+  return res.status(200).send(recipe);
+});
+
+app.get('/recipe', (_req, res, _next) => {
+  return res.status(200).send(recipes);
+});
+
+app.put('/recipe/:id', (req, res, _next) => {
+  const recipe = recipes.find(({ id }) => id === parseInt(req.params.id));
+  if(!recipe) return res.status(404).json({ message: "recipe not found" });
+  const newRecipe = { id: parseInt(req.params.id), name: req.body.name, ingredients: req.body.ingredients };
+  recipes.splice(recipes.indexOf(({ id }) => id === parseInt(req.params.id)), 1, newRecipe);
+  return res.status(200).send(newRecipe);
+});
+
+app.get('/comments', (req, res, _next) => {
+  const { filter } = req.query;
+  const posts = users.reduce((acc, { comments }) => [...acc, ...comments], []);
+  if(filter) {
+    const filtered = posts.filter((comment) => comment.includes(filter));
+    return res.status(200).send(filtered);
+  }
+  return res.status(200).send(posts);
+});
+
+app.put('/user/:id', (req, res, _next) => {
+  const { status } = req.body;
+  if(status !== 'true' && status !== 'false') return res.status(400).json({ message: "status isn't a boolean" });
+  const foundUser = users2.find(({ id }) => id === parseInt(req.params.id));
+  if(!foundUser) return res.status(404).json({ message: "user not found" });
+  const newUser = { id: foundUser.id, user: foundUser.user, isActive: status === 'true' ? true : false };
+  users2.splice(users2.indexOf(({ id }) => id === parseInt(req.params.id)), 1, newUser);
+  return res.status(200).send(newUser);
+});
+
+app.put('/recipe/:id/ingredients', (req, res, _next) => {
+  const { remove, insert } = req.body;
+  const recipe = recipes.find(({ id }) => id === parseInt(req.params.id));
+  if(!recipe) return res.status(404).json({ message: "recipe not found" });
+  const newIngredients = recipe.ingredients;
+  if(remove) {
+    newIngredients.splice(newIngredients.indexOf((ing) => ing === remove), 1);
+  }
+  if(insert) newIngredients.push(insert);
+  const newRecipe = { id: recipe.id, name: recipe.name, ingredients: newIngredients };
+  recipes.splice(recipes.indexOf(({ id }) => id === parseInt(req.params.id)), 1, newRecipe);
+  return res.status(200).send(newRecipe);
+});
+
 app.listen(3000, () => console.log('OK'));
