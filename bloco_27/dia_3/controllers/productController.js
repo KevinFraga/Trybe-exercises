@@ -36,7 +36,7 @@ router.post('/add-user', async (req, res) => {
 
   const newProduct = await ProductModel.add(name, brand);
 
-  res.status(200).json(newProduct);
+  res.status(201).json(newProduct);
 });
 
 router.delete('/delete-user/:id', async (req, res) => {
