@@ -4,7 +4,9 @@
   "description": "Testes de integração para cada camada do modelo MSC :school:",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests --recursive --exit"
+    "test": "mocha tests --recursive --exit",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
     "chai": "^4.3.4",
     "mocha": "^9.0.3",
     "mongodb-memory-server": "^7.3.4",
+    "nodemon": "^2.0.12",
     "sinon": "^11.1.2"
   }
 }
