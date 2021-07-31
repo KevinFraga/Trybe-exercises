@@ -68,7 +68,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 26: Introdução ao desenvolvimento Web com NodeJS [:heavy_check_mark:]
 
-##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful [:hourglass_flowing_sand:]
+##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful [:heavy_check_mark:]
 
 ##### Bloco 28: Autenticação e Upload de Arquivos [:hourglass_flowing_sand:]
 
