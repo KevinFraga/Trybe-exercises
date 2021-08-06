@@ -70,8 +70,10 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 27: NodeJS: Camada de Serviço e Arquitetura Rest e Restful [:heavy_check_mark:]
 
-##### Bloco 28: Autenticação e Upload de Arquivos [:hourglass_flowing_sand:]
+##### Bloco 28: Autenticação e Upload de Arquivos [:heavy_check_mark:]
 
 ##### Bloco 29: Deployment [:hourglass_flowing_sand:]
+
+##### Bloco 30: Arquitetura: SOLID e ORM [:hourglass_flowing_sand:]
 
 <!-- :hourglass_flowing_sand: -->
