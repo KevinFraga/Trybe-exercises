@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "kevin",
+    "password": "7763",
+    "database": "book_store",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "kevin",
+    "password": "7763",
+    "database": "book_store",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "kevin",
+    "password": "7763",
+    "database": "book_store",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
