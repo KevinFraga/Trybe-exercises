@@ -43,7 +43,7 @@ router.post('/', async (req, res) => {
   };
 });
 
-router.put('/:id', async (req, res) => {
+router.post('/:id', async (req, res) => {
   try {
     const { title, author, pageQuantity } = req.body;
     const { id } = req.params;

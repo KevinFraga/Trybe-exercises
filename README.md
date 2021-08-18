@@ -74,7 +74,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 29: Deployment [:heavy_check_mark:]
 
-##### Bloco 30: Arquitetura: SOLID e ORM [:hourglass_flowing_sand:]
+##### Bloco 30: Arquitetura: SOLID e ORM [:heavy_check_mark:]
 
 ##### Bloco 31: Sockets [:hourglass_flowing_sand:]
 
