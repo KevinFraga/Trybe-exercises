@@ -1,4 +1,4 @@
-# Bloco 22: Normalização e Modelagem de Banco de Dados
+# Bloco 22 - Normalização e Modelagem de Banco de Dados
 
 Modelando Bancos de Dados :back::end:
 
