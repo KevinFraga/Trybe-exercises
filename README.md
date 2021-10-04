@@ -82,6 +82,6 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ## Ciência da Computação
 
-##### Bloco 33: Introdução à Python [:hourglass_flowing_sand:]
+##### Bloco 33: Introdução à Python [:heavy_check_mark:]
 
 <!-- :hourglass_flowing_sand: -->
