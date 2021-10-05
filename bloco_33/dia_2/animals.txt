@@ -1,0 +1,5 @@
+cachorro
+gato
+papagaio
+ovelha
+vaca
