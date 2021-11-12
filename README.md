@@ -84,4 +84,14 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 33: Introdução à Python [:heavy_check_mark:]
 
+##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto [:heavy_check_mark:]
+
+##### Bloco 35: Redes e Raspagem de Dados [:hourglass_flowing_sand:]
+
+##### Bloco 36: Algoritmos [:hourglass_flowing_sand:]
+
+##### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets [:hourglass_flowing_sand:]
+
+##### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas [:hourglass_flowing_sand:]
+
 <!-- :hourglass_flowing_sand: -->
