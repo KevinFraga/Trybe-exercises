@@ -86,7 +86,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto [:heavy_check_mark:]
 
-##### Bloco 35: Redes e Raspagem de Dados [:hourglass_flowing_sand:]
+##### Bloco 35: Redes e Raspagem de Dados [:heavy_check_mark:]
 
 ##### Bloco 36: Algoritmos [:hourglass_flowing_sand:]
 
