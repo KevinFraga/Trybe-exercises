@@ -90,7 +90,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 36: Algoritmos [:heavy_check_mark:]
 
-##### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets [:hourglass_flowing_sand:]
+##### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets [:heavy_check_mark:]
 
 ##### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas [:hourglass_flowing_sand:]
 
